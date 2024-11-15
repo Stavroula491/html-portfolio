@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo Picasso</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+    .carousel {
+        width: 80%;
+        height: 400px;
+        margin: 0 auto;
+        justify-content: center; 
+        align-items: center;
+        border-radius: 20px;  
+    }
+
+    .guernica{
+      height: 400px;
+    }
+
+    .life-piano{
+      height: 400px;
+    }
+
+    .periods{
+      margin-top: 40px;
+    }
+
+    .picasso-carousel{
+      margin-top: 40px;
+    }
+
+    .card-and-glass{
+      height: 400px;
+    }
+
+    .home-images{
+      height: 500px;
+      width: 500px;
+    }
+
+    .period-descr{
+      text-align: justify;
+    }
+
+    .section-background{
+        background-image: url(./backround-image.webp), linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+        background-blend-mode: overlay;
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat;          
+        position: relative;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" fill="currentColor" class="bi bi-palette-fill" viewBox="0 0 16 16">
+            <path d="M12.433 10.07C14.133 10.585 16 11.15 16 8a8 8 0 1 0-8 8c1.996 0 1.826-1.504 1.649-3.08-.124-1.101-.252-2.237.351-2.92.465-.527 1.42-.237 2.433.07M8 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m4.5 3a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3M5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+          </svg>
+            Pablo Picasso</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 30px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Periods
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./blue-period-bootstrap.html">Blue Period</a></li>
+                  <li><a class="dropdown-item" href="./rose-period-bootstrap.html">Rose Period</a></li>
+                  <li><a class="dropdown-item" href="./analytical-cubism-bootstrap.html">Analytical Cubism</a></li>
+                  <li><a class="dropdown-item" href="./synthetic-cubism-bootstrap.html">Synthetic Cubism</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <section class="section-background">
+      <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide picasso-carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./home-page-images/PicassoGuernica.jpg" class="d-block w-100 guernica" alt="Guernica">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Guernica</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./wikiart images/analytical cubism/still-life-on-the-piano-cort-1911.jpg!Large.jpg" class="d-block w-100 life-piano" alt="still-life-on-the-piano-cort">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nature morte sur un piano ('CORT')</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./wikiart images/Synthetic Cubism/playing-card-and-glass-1914.jpg!Large.jpg" class="d-block w-100 card-and-glass" alt="Playing Card and Glass">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Playing Card and Glass</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    
+    
+      <!--
+      Start the descriptions of Picasso's life and different periods
+      -->
+        <div class="container marketing periods">
+          <!-- START THE FEATURETTES -->
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-xl-6 col-sm-12 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Pablo Picasso<span class="text-body-secondary"> 1905-1907</span></h2>
+              <div class="period-descr">
+              <p class="lead" style="font-size: 25px;">Pablo Picasso, born Pablo Diego José Francisco de Paula Juan Nepomuceno Crispín Crispiniano 
+                María Remedios de la Santísima Trinidad Ruiz Picasso, on October 25, 1881, in Málaga, Spain, 
+                was destined for a life of art. His father, Don José Ruiz Blasco, was a painter and art teacher who 
+                recognized his son's extraordinary talent early on. By the age of seven, Picasso was already receiving 
+                formal artistic training, and by his early teens, he was producing remarkably skilled and 
+                sophisticated works. His family moved to Barcelona in 1895, and it was here that Picasso's 
+                talents began to flourish. He was accepted into the prestigious School of Fine Arts at just 13 
+                years old, a remarkable achievement that set the stage for his future success.</p>
+                <p class="lead" style="font-size: 25px;">Picasso's early work was heavily influenced by the classical training he received and by the masters 
+                he studied, but he quickly began to experiment with new forms and ideas. His time in Barcelona was 
+                marked by involvement with a group of radical young artists and intellectuals who encouraged his 
+                burgeoning sense of artistic rebellion. In 1900, Picasso made his first trip to Paris, the center 
+                of the art world, where he would eventually settle. Paris, with its vibrant avant-garde scene, 
+                became the perfect environment for Picasso's restless creativity.</p>
+                <p class="lead" style="font-size: 25px;">The early 1900s saw Picasso's work undergo significant changes, leading to the periods known as 
+                the Blue Period (1901-1904) and the Rose Period (1904-1906). The Blue Period was characterized 
+                by melancholic scenes, often depicting the poor and marginalized, rendered in shades of blue 
+                and green. This phase was influenced by his own experiences of poverty and the suicide of his 
+                close friend, Carlos Casagemas. In contrast, the Rose Period marked a shift towards warmer tones 
+                and more joyful subjects, reflecting a more optimistic outlook as Picasso's life improved.</p>
+                <p class="lead" style="font-size: 25px;">Picasso's most groundbreaking work began in 1907 with Les Demoiselles d'Avignon, a revolutionary 
+                painting that laid the foundation for Cubism. Alongside Georges Braque, Picasso developed Cubism, 
+                a movement that broke objects and figures down into geometric shapes and presented them from multiple 
+                angles simultaneously. This radical departure from traditional representation challenged the 
+                conventions of perspective and realism, influencing countless artists and reshaping the trajectory 
+                of modern art.</p>
+                <p class="lead" style="font-size: 25px;">The Cubist period was followed by Picasso's involvement in other avant-garde movements, such as 
+                Surrealism, and a return to more classical themes and styles during the 1920s and 1930s. 
+                His work during this time was incredibly diverse, ranging from highly abstract pieces to 
+                works inspired by ancient Mediterranean cultures. Picasso was also prolific in sculpture, 
+                ceramics, and printmaking, constantly pushing the boundaries of his artistic expression.</p>
+                <p class="lead" style="font-size: 25px;">Picasso's personal life was as complex and intense as his artistic career. He had numerous 
+                relationships with women, many of whom became his muses, and his tumultuous love life had a 
+                significant impact on his work. His relationships with Fernande Olivier, Olga Khokhlova, 
+                Marie-Thérèse Walter, Dora Maar, Françoise Gilot, and Jacqueline Roque were reflected in 
+                different phases of his art, each bringing out different aspects of his creativity.</p>
+                <p class="lead" style="font-size: 25px;">One of Picasso's most famous works, Guernica (1937), stands as a powerful political statement 
+                against the horrors of war. Created in response to the bombing of the Basque town of Guernica 
+                during the Spanish Civil War, the painting is a harrowing depiction of suffering and chaos, 
+                rendered in stark black, white, and gray. Guernica solidified Picasso's reputation not only 
+                as an innovator in the art world but also as an artist deeply engaged with the social and 
+                political issues of his time.</p>
+                <p class="lead" style="font-size: 25px;">As World War II and its aftermath reshaped Europe, Picasso remained in Paris, working through 
+                the occupation and continuing to create prolifically. In the post-war years, he became an 
+                international celebrity, his works celebrated in major exhibitions worldwide. Despite his fame, 
+                Picasso never stopped experimenting and evolving, delving into new artistic challenges even in 
+                his later years.</p>
+                <p class="lead" style="font-size: 25px;">Picasso continued to work with undiminished energy well into his eighties and nineties. 
+                He explored new themes, media, and techniques, always driven by an insatiable curiosity 
+                and desire to create. He passed away on April 8, 1973, at the age of 91 in Mougins, France, 
+                leaving behind an unparalleled legacy. Picasso's oeuvre comprises over 50,000 works, 
+                including paintings, drawings, sculptures, ceramics, prints, and textiles, making him one 
+                of the most prolific artists in history. His influence on art and culture remains profound, 
+                with his work continuing to inspire artists, scholars, and admirers around the world.</p>
+                <p class="lead" style="font-size: 25px;">Picasso's life was one of relentless innovation, personal complexity, and enduring impact. 
+                From his early years in Spain to his final days in France, he constantly reinvented himself 
+                and his art, challenging the boundaries of what was possible and leaving an indelible mark 
+                on the world. His legacy is not only in his vast body of work but in the way he transformed 
+                the very nature of art, opening up new possibilities for expression and redefining what it means 
+                to be an artist.</p></p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 order-md-1">
+              <img src="./wikiart images/PicassoPortrait.jpeg"  alt="BoyWithPipe" class="home-images">
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-xl-6 col-sm-12">
+              <h2 class="featurette-heading fw-normal lh-1">Blue Period<span class="text-body-secondary"> 1901-1904</span></h2>
+              <div class="period-descr">
+              <p class="lead" style="font-size: 25px;">Pablo Picasso's Blue Period is one of the most significant phases in the artist's 
+                career, lasting from 1901 to 1904. This period is characterized by a melancholic and somber tone, 
+                both in color palette and subject matter. The name "Blue Period" comes from Picasso's extensive 
+                use of blue and blue-green hues, which dominate the paintings from this time. This phase reflects 
+                a profound shift in Picasso's emotional and artistic development, marking a departure from the 
+                vibrant and varied styles of his earlier works.</p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <img src="./wikiart images/blue/two-women-sitting-at-a-bar-1902.jpg" alt="TwoWomenSittingAtABar" class="home-images">
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-xl-6 col-sm-12 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Rose Period<span class="text-body-secondary"> 1905-1907</span></h2>
+              <div class="period-descr">
+              <p class="lead" style="font-size: 25px;">Pablo Picasso's Rose Period, spanning from 1904 to 1906, marks a significant shift 
+                in the artist's work, moving away from the somber tones of the Blue Period into a warmer, more 
+                optimistic phase. This period is characterized by a palette dominated by pinks, reds, and earth 
+                tones, and a focus on more cheerful, if still somewhat melancholic, subjects. The Rose Period 
+                reflects a time of emotional recovery and artistic exploration for Picasso, and it represents an 
+                important transitional phase that would eventually lead to the development of Cubism.</p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 order-md-1">
+              <img src="./wikiart images/rose/a-boy-with-pipe.jpg"  alt="BoyWithPipe" class="home-images">
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-xl-6 col-sm-12">
+              <h2 class="featurette-heading fw-normal lh-1">Analytical Cubism<span class="text-body-secondary"> 1907-1912</span></h2>
+              <div class="period-descr">
+              <p class="lead" style="font-size: 25px;">Analytical Cubism, a term coined to describe the early phase of the Cubist movement, 
+                represents a groundbreaking period in the history of modern art. Developed by Pablo Picasso and 
+                Georges Braque between 1908 and 1912, Analytical Cubism is characterized by its radical departure 
+                from traditional perspectives, emphasizing the deconstruction of objects into their geometric 
+                components. This period was pivotal in the evolution of Cubism, setting the stage for the further 
+                abstraction of Synthetic Cubism and influencing countless artists and movements that followed.</p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <img src="./wikiart images/analytical cubism/still-life-with-bottle-of-anis-del-mono-1909.jpg"  alt="BoyWithPipe" class="home-images">
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-xl-6 col-sm-12 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Synthetic Cubism<span class="text-body-secondary"> 1912-1915</span></h2>
+              <div class="period-descr">
+              <p class="lead" style="font-size: 25px;">Synthetic Cubism, the later phase of the Cubist movement, represents a significant 
+                evolution from the earlier Analytical Cubism. Developed by Pablo Picasso and Georges Braque 
+                around 1912, Synthetic Cubism introduced a new approach to art, characterized by the 
+                simplification of forms, the use of bright colors, and the incorporation of mixed media, 
+                including collage. This period marked a departure from the highly fragmented, monochromatic 
+                works of Analytical Cubism, embracing a more playful, accessible, and constructive style. 
+                Synthetic Cubism played a crucial role in the development of modern art, influencing countless 
+                artists and movements throughout the 20th century.</p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 order-md-1">
+              <img src="./wikiart images/Synthetic Cubism/guitar-and-bottle.jpg"  alt="BoyWithPipe" class="home-images">
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+      
+        </div><!-- /.container -->
+      </section>
+
+      <section> 
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-lg-12 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+                <p style="font-size: 20px;">
+                    Background image created with assistance from 
+                    OpenAI's ChatGPT and DALL-E.<br>
+                    Images of Picasso's paintings sourced from <a href="https://www.wikiart.org/">WikiArt</a> 
+                    for educational and non-commercial use. <br>
+                    Summaries of Picasso's life and artistic periods were generated with assistance from OpenAI's ChatGPT.
+                </p>
+            </div>
+          </footer>
+        </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
